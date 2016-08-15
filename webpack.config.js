@@ -1,9 +1,16 @@
+const path = require('path');
+
 module.exports = (env) => {
   return {
-    entry: './index.js',
+    entry: './client/dev/index.js',
+    devtool: 'source-map',
     output: {
-      path: '.',
+      path: './client/dev/',
+      publicPath: '/client/dev',
       filename: 'bundle.js'
+    },
+    resolve: {
+      root: path.resolve(__dirname, '.')
     },
     module: {
       loaders: [
