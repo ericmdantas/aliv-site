@@ -1,5 +1,10 @@
 main .logo {
+  width: 70px;
+  margin: 0 auto;
+  padding: 120px 100px;
+  border-radius: 100%;
   transition: color .3s;
+  font-size: 100px;
 }
 
 .badge a {
@@ -7,5 +12,21 @@ main .logo {
 }
 
 .slogan {
-  
+
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
 }
