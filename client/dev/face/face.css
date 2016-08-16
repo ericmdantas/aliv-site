@@ -1,0 +1,7 @@
+#logo {
+  transition: color .3s;
+}
+
+.badge a {
+  text-decoration: none;
+}

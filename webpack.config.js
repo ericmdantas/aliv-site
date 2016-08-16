@@ -15,7 +15,11 @@ module.exports = (env) => {
     module: {
       loaders: [
         {
-          test: /.\css$/,
+          test: /\.html$/,
+          loader: 'html'
+        },
+        {
+          test: /\.css$/,
           loader: 'style!css!'
         },
         {

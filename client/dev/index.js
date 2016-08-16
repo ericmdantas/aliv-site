@@ -1,3 +1,8 @@
-var {x} = {x: 1}
+import Vue from 'vue';
 
-console.log(x)
+new Vue({
+  el: '#app',
+  components: {
+    'app': require('./app/index.js')
+  }
+});

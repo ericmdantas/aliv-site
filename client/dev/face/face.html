@@ -1,0 +1,12 @@
+<div>
+  <h1 :style="style"
+      id="logo">aliv</h1>
+
+  <span v-for="badge in badges"
+        track-by="$index"
+        class="badge">
+    <a :href="badge.url">
+      <img :src="badge.icon" />
+    </a>
+  </span>
+</div>
