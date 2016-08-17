@@ -5,6 +5,8 @@ module.exports = {
   components: {
     'aliv-header': require('../header/index.js'),
     'aliv-face': require('../face/index.js'),
+    'aliv-options': require('../options/index.js'),
+    'aliv-usage': require('../usage/index.js'),
     'aliv-footer': require('../footer/index.js')
   }
 };

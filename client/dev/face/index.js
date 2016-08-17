@@ -3,9 +3,6 @@ import './face.css';
 module.exports = {
   data() {
     return {
-      style: {
-        color: this._randColor()
-      },
       badges: [
         {
           icon: "https://badge.fury.io/js/aliv.svg",
@@ -20,18 +17,6 @@ module.exports = {
           url: "https://coveralls.io/github/ericmdantas/aliv?branch=master"
         }
       ]
-    }
-  },
-  ready() {
-    setInterval(() => {
-      this.style = this._randColor();
-    }, 3000);
-  },
-  methods: {
-    _randColor() {
-      return {
-        color: '#' + ("000000" + Math.random().toString(16).slice(2, 8).toUpperCase()).slice(-6)
-      }
     }
   },
   template: require('./face.html')

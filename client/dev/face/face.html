@@ -1,18 +1,19 @@
 <div>
-  <div>
-    <h1 :style="style"
-      class="logo pulse">ALIV</h1>
+  <div class="logo-container"> 
+    <span class="logo pulse">aliv</span>
   </div>
 
   <div>
     <p class="slogan">Light, fast, powerful and intuitive one liner live-reloading Node.js server.</p>
   </div>
 
-  <span v-for="badge in badges"
-        track-by="$index"
-        class="badge">
-          <a :href="badge.url">
-            <img :src="badge.icon" />
-          </a>
-  </span>
+  <div class="badges-container">
+    <span v-for="badge in badges"
+          track-by="$index"
+          class="badge">
+            <a :href="badge.url">
+              <img :src="badge.icon" />
+            </a>
+    </span>
+  </div>
 </div>

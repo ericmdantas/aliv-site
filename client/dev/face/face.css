@@ -1,18 +1,31 @@
-main .logo {
-  width: 70px;
-  margin: 0 auto;
-  padding: 120px 100px;
-  border-radius: 100%;
-  transition: color .3s;
-  font-size: 100px;
+main .logo-container {
+  text-align: center;
 }
 
-.badge a {
+main .logo {
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 100%;
+  transition: color .3s;
+  font-size: 80px;
+  color: steelblue;
+}
+
+.badges-container {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.badge a,
+.badge a:hover {
   text-decoration: none;
+  border-bottom: none;
 }
 
 .slogan {
-
+  margin-top: 150px;
+  text-align: center;
+  color: #666;
 }
 
 .pulse {
@@ -21,12 +34,19 @@ main .logo {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(70,130,180, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    box-shadow: 0 0 0 10px rgba(70,130,180, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    box-shadow: 0 0 0 0 rgba(70,130,180, 0);
+  }
+}
+
+@media(min-width: 600px) {
+  main .logo {
+    padding: 80px 70px;
+    font-size: 100px;
   }
 }

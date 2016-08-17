@@ -1,12 +1,19 @@
-header {
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
   overflow: hidden;
+  background-color: #fff;
+  box-sizing: border-box;
   padding: 15px 10px;
   box-shadow: 0 -1px 0 #e0e0e0,
               0 0 2px rgba(0,0,0,.12),
               0 2px 4px rgba(0,0,0,.24);
 }
 
-header .logo {
+.header .logo {
   margin: 0;
 }
 
