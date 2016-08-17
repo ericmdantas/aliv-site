@@ -1,3 +1,29 @@
-<div id="usage">
+<section id="usage">
   <h1>Usage</h1>
-</div>
+
+  <pre>--port, --p                      change port
+--host, --h                      change the host name
+--secure, --s                    use https/wss
+--quiet, --q                     no logging whatsoever
+--noBrowser, --nb                won't open the browser automagically
+--only, --o                      will only watch for changes in the given path/glob/regex/array
+--ignore, --ign                  won't watch for changes in the given path (regex)
+--pathIndex, --pi                change the path to your index.html
+--proxy, --px                    uses proxy
+--proxyTarget, --pxt             the http/https server where the proxy will "redirect"
+--proxyWhen, --pxw               when the proxy should be activated; like --pxw /api/*</pre>
+
+  <h1>Defaults</h1>
+
+  <pre>--port                           defaults to 1307;
+--host                           defaults to 127.0.0.1;
+--secure                         defaults to false;
+--quiet                          defaults to false;
+--only                           defaults to .;
+--ignore                         defaults to folders like node_modules and suchs;
+--noBrowser                      defaults to false;
+--pathIndex                      defaults to an empty string;
+--proxy                          defaults to an false;
+--proxyTarget                    defaults to an empty string;
+--proxyWhen                      defaults to an empty string;</pre>
+</section>

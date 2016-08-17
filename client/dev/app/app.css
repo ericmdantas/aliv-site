@@ -14,8 +14,31 @@ a {
   text-decoration: none;
 }
 
+pre {
+  padding: 20px;
+  background-color: #f7f7f7;
+  font-size: 16px;
+}
+
+h1 {
+  color: #333;
+}
+
 a:hover {
   border-bottom: 2px solid #4682b4;
+}
+
+section {
+  padding-top: 70px;
+}
+
+.inline-cmd {
+  padding: 3px;
+  background-color: #f7f7f7;
+}
+
+.terminal-comment {
+  color: #777;
 }
 
 .left {
